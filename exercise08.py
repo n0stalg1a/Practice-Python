@@ -7,13 +7,16 @@ playerwins = 0
 computerwins = 0
 draws = 0
 
+
 def playagain():
     playerchoice = input('Would you like to play again? y or n: ')
     if playerchoice == 'y':
-        print(f'Current Score:- \nPlayer wins {playerwins}\nComputer wins {computerwins}\nDraws {draws}')
+        print(f'Current Score:- \nPlayer wins {playerwins}\nComputer wins'
+              f' {computerwins}\nDraws {draws}')
         game()
     else:
-        print(f'End Score:- \nPlayer wins {playerwins}\nComputer wins {computerwins}\nDraws {draws}')
+        print(f'End Score:- \nPlayer wins {playerwins}\nComputer wins'
+              f' {computerwins}\nDraws {draws}')
         quit()
 
 
@@ -21,8 +24,9 @@ def game():
     global playerwins
     global computerwins
     global draws
-    
-    # The exercise didnt ask for this I just did it to automate the choices for the computer and player
+
+    # The exercise didnt ask for this I just did it to automate the choices
+    # for the computer and player
     actions = ['rock', 'paper', 'scissors']
     playerchoice = random.choice(actions)
     computerchoice = random.choice(actions)
@@ -59,7 +63,7 @@ def game():
         playerwins += 1
         playagain()
     else:
-        print(f'You should never get here!')
+        print('You should never get here!')
         playagain()
 
 game()
