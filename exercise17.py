@@ -11,6 +11,7 @@ soup = BeautifulSoup(result.text, "html.parser")
 title = soup.findAll('p', class_="indicate-hover")
 news_titles = [title.text for title in title]
 
+# Removed 6 items as they were not titles.
 COUNT = len(news_titles) - 6
 
 for i in range(1, COUNT):
