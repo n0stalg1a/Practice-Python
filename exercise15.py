@@ -1,6 +1,6 @@
 # 15: Reverse Word Order
-# Write a program (using functions!) that asks the user for a long string 
-# containing multiple words. Print back to the user the same string, except 
+# Write a program (using functions!) that asks the user for a long string
+# containing multiple words. Print back to the user the same string, except
 # with the words in backwards order. For example, say I type the string:
 
 # My name is Michele
@@ -13,11 +13,12 @@
 
 def getlongstring():
     return input('Please enter a sentence and I will reverse it for you: ')
-    
+
 
 def reversethestring(sentence):
     result = sentence.split(' ')[::-1]
     result = ' '.join(result)
     print(result)
+
 
 reversethestring(getlongstring())
