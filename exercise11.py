@@ -3,18 +3,18 @@
 
 import random
 
-usernum = random.randint(1, 20)
+USER_NUM = random.randint(1, 20)
 
-if usernum == 2:
-    b = f'Number {usernum} is prime!'
-elif usernum == 1:
-    b = f'Number {usernum} is not prime.'
+if USER_NUM == 2:
+    b = f'Number {USER_NUM} is prime!'
+elif USER_NUM == 1:
+    b = f'Number {USER_NUM} is not prime.'
 else:
-    for i in range(2, usernum):
-        if usernum % i == 0:
-            b = f'Number {usernum} is not prime.'
+    for i in range(2, USER_NUM):
+        if USER_NUM % i == 0:
+            b = f'Number {USER_NUM} is not prime.'
             break
     else:
-        b = f'Number {usernum} is prime!'
+        b = f'Number {USER_NUM} is prime!'
 
 print(b)
