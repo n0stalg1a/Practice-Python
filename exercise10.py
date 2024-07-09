@@ -1,7 +1,7 @@
 # 10: List Overlap Comprehensions
 # Take two lists, say for example, a and b:
-# and write a program that returns a list that contains only the elements 
-# that are common between the lists (without duplicates). Make sure your 
+# and write a program that returns a list that contains only the elements
+# that are common between the lists (without duplicates). Make sure your
 # program works on two lists of different sizes.
 
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
@@ -15,6 +15,7 @@ for i in a:
 
 print(c)
 
-# The original exercise asked for a one liner but it is impossible without using sets.
+# The original exercise asked for a one liner but it is impossible without
+# using sets.
 c = list(set(a) & set(b))
 print(c)
