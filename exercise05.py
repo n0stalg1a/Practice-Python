@@ -1,12 +1,12 @@
 # 5: List Overlap
-# Write a program that returns a list that contains only the elements 
-# that are common between the lists (without duplicates). Make sure your 
+# Write a program that returns a list that contains only the elements
+# that are common between the lists (without duplicates). Make sure your
 # program works on two lists of different sizes.
 
 # Extras:
 
 # Randomly generate two lists to test this
-# Write this in one line of Python (don’t worry if you can’t figure this 
+# Write this in one line of Python (don’t worry if you can’t figure this
 # out at this point - we’ll get to it soon)
 
 import random
@@ -14,13 +14,14 @@ import random
 a = []
 b = []
 
-# Extras 1
+
 def createList(newlist):
     listlength = random.randint(10, 20)
     for i in range(1, listlength):
         num = random.randint(1, 25)
         if num not in newlist:
             newlist.append(num)
+
 
 createList(a)
 createList(b)
@@ -40,5 +41,5 @@ for i in a:
 
 print(c)
 
-# Extras 2
+
 print(list(set(i for i in a if i in b)))
