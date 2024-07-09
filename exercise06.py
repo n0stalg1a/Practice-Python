@@ -1,8 +1,10 @@
 # 6: String Lists
-# Ask the user for a string and print out whether this string is a palindrome or not. 
+# Ask the user for a string and print out whether this string is a palindrome
+# or not.
 # (A palindrome is a string that reads the same forwards and backwards.)
 
-userinput = input('Please enter a word and I will check if it is a palindrome: ')
+userinput = input('Please enter a word and I will check if it is a palindrome:'
+                  ' ')
 
 reversed = userinput[::-1]
 
